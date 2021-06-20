@@ -1,0 +1,26 @@
+1. In Linux(Debian)
+
+1. Update linux system(sudo apt-get update)
+2. Install PostgreSQL on Ubuntu(sudo apt-get install postgresql postgresql-contrib)
+   config file is present in the location : /etc/postgresql/12/main
+   service postgresql :-> Usage: /etc/init.d/postgresql {start|stop|restart|reload|force-reload|status} [version ..]
+   To know the status we us the command: service postgresql status .
+3. Connect to PostgreSQL
+   Default user for postgresql is postgres.
+   for the first time to use postgresql we have to use the command : sudo su postgres
+   Then use psql command
+   To Create database use the command : CREATE DATABASE <DatabaseName>;
+   To Connect to the Database use the command : \c <DatabaseName>
+   
+4. https://www.postgresqltutorial.com/postgresql-create-table/
+
+postgresSQL4Everybody project database connection:
+Host : pg.pg4e.com
+Port : 5432
+Database: pg4e_967768399c
+User:     pg4e_967768399c
+Password: pg4e_p_2710f79c54b290e
+
+psql -h pg.pg4e.com -p 5432 -U pg4e_967768399c pg4e_967768399c
+
+
